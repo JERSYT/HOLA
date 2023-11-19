@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #4B0082;
+  }
+  * Estilos para el contenedor del botón de Google Translate */
+  #google_translate_element {
+    display: inline-block; /* Muestra el contenedor como un bloque en línea */
+    margin: 0px 10px;
+  }
+  
+  /* Estilos para el botón de Google Translate */
+  .goog-te-combo {
+    margin: 0 !important; /* Restablece el margen para el botón */
+    border: 1px solid #ccc; /* Añade un borde alrededor del botón */
+    border-radius: 5px; /* Agrega esquinas redondeadas al botón */
+    padding: 5px; /* Añade relleno alrededor del botón */
+  }
+  
+  /* Estilos para la lista desplegable de idiomas */
+  .goog-te-menu-value {
+    padding: 5px; /* Añade relleno a los elementos de la lista desplegable */
+    background-color: black;
+    color: black;
+  }
+  
+  
+  .goog-te-gadget-simple {
+    background-color: transparent !important;
+      border-left: none !important;
+      border-top: none !important;
+      border-bottom: none !important;
+      border-right: none !important;
+      font-size: 10pt !important;
+      display: inline-block !important;
+      padding-top: 1px !important;
+      padding-bottom: 2px !important;
+      cursor: pointer !important;
+      color: white !important;
+  }
+  
+  .goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed span {
+      text-decoration: none !important;
+      color: black !important;
+  }
+  
+  .goog-te-gadget-icon {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png?20160129085523') !important;
+      background-position: center center !important; /* Ajusta la posición según sea necesario */
+      background-repeat: no-repeat !important;
+      background-size: contain !important; /* Ajusta el tamaño según sea necesario */
+      margin-left: 2px !important;
+      margin-right: 2px !important;
+      width: 19px !important;
+      height: 19px !important;
+      margin-left: 5px;
+      
+  }
+  
+  .VIpgJd-ZVi9od-ORHb-OEVmcd {
+      display: none;
+  }
+  
+  .VIpgJd-ZVi9od-ORHb {
+      display: none;
+      padding: 0;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color:#4B0082;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    padding: 5px;
+    margin: 15px 0; 
+  }
+  
+  .form-group label {
+    padding: 10px;
+    display: block;
+    color: #a749a7;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: calc(100% - 10px);
+    background-color: blueviolet;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-group input::placeholder{
+    color: #fff;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border: #ff00ff solid 2px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #8A2BE2;
+  }
+  
+  .register-link {
+    margin-top: 20px;
+  }
+  
+  .register-link a {
+    text-decoration: none;
+    color: #4B0082;
+    transition: color 0.3s ease;
+  }
+  
+  .register-link a:hover {
+    color: #8A2BE2;
+    text-decoration: underline;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 767px) {
+    .container {
+      padding: 20px;
+    }
+  }
+  

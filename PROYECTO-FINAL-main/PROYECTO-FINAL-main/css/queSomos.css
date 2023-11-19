@@ -1,0 +1,331 @@
+body {
+  background-size: cover;
+  background-image: url("../imagenes/fondo_1.jpg");
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    padding-top: 80px; /* Ajusta esto a la altura de tu header */
+  }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  * Estilos para el contenedor del botón de Google Translate */
+  #google_translate_element {
+    display: inline-block; /* Muestra el contenedor como un bloque en línea */
+    margin: 0px 10px;
+  }
+  
+  /* Estilos para el botón de Google Translate */
+  .goog-te-combo {
+    margin: 0 !important; /* Restablece el margen para el botón */
+    border: 1px solid #ccc; /* Añade un borde alrededor del botón */
+    border-radius: 5px; /* Agrega esquinas redondeadas al botón */
+    padding: 5px; /* Añade relleno alrededor del botón */
+  }
+  
+  /* Estilos para la lista desplegable de idiomas */
+  .goog-te-menu-value {
+    padding: 5px; /* Añade relleno a los elementos de la lista desplegable */
+    background-color: black;
+    color: white;
+  }
+  
+  
+  .goog-te-gadget-simple {
+    background-color: transparent !important;
+      border-left: none !important;
+      border-top: none !important;
+      border-bottom: none !important;
+      border-right: none !important;
+      font-size: 10pt !important;
+      display: inline-block !important;
+      padding-top: 1px !important;
+      padding-bottom: 2px !important;
+      cursor: pointer !important;
+      color: white !important;
+  }
+  
+  .goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed span {
+      text-decoration: none !important;
+      color: white !important;
+  }
+  
+  .goog-te-gadget-icon {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png?20160129085523') !important;
+      background-position: center center !important; /* Ajusta la posición según sea necesario */
+      background-repeat: no-repeat !important;
+      background-size: contain !important; /* Ajusta el tamaño según sea necesario */
+      margin-left: 2px !important;
+      margin-right: 2px !important;
+      width: 19px !important;
+      height: 19px !important;
+      margin-left: 5px;
+      
+  }
+  
+  .VIpgJd-ZVi9od-ORHb-OEVmcd {
+      display: none;
+  }
+  
+  .VIpgJd-ZVi9od-ORHb {
+      display: none;
+      padding: 0;
+  }
+  header {
+    background-color: #4B0082; /* Morado oscuro */
+    color: #D8BFD8; /* Morado claro */
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fija el header */
+    width: 100%; /* Ancho completo */
+    top: 0; /* Alinea en la parte superior */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+  }
+  
+  .logo {
+    display: inline-block; /* Permite que el enlace abarque solo el tamaño de la imagen */
+  }
+  
+  .logo img {
+    width: 100px; /* Tamaño del logo */
+  }
+  
+  .navigation {
+    display: flex;
+    gap: 20px;
+    padding-right: 30px;
+  }
+  
+  .navigation a {
+    color: #fff; /* Color del texto */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .navigation a:hover {
+    background-color: #8A2BE2; /* Morado claro más brillante al pasar el ratón */
+    color: white;
+  }
+
+  footer {
+    background-color: #4B0082; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    width: 20%; /* Ancho de cada columna */
+    padding: 10px;
+  }
+  
+  .footer-column img {
+    width: 200px;
+    height: auto; /* Para mantener la proporción */
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
+  .social-buttons a {
+    display: inline-block;
+    margin-right: 10px; /* Espacio entre las imágenes */
+  }
+  
+  .social-buttons a img {
+    width: 40px; /* Ancho de la imagen */
+    height: 40px; /* Altura de la imagen */
+  }
+  
+  ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  ul li a:hover {
+    color: #D8BFD8; /* Cambia el color al pasar el ratón */
+  }
+  
+  .menu-toggle {
+    background-color: #4B0082; /* Color de fondo */
+    color: #D8BFD8; /* Color del texto */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+  }
+  
+  .menu-toggle:hover {
+    background-color: #8A2BE2; /* Color de fondo al pasar el ratón */
+    color: white; /* Color del texto al pasar el ratón */
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  @media (max-width: 767px) {
+    .navbar-toggle {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 20px;
+      z-index: 100;
+    }
+  
+    .navigation {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background: #4B0082;
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .navigation a {
+      padding: 10px 20px;
+      border: none;
+    }
+  
+    footer {
+      padding: 10px;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column {
+      width: 100%; /* Cambiamos el ancho a 100% en dispositivos móviles */
+      margin-bottom: 20px; /* Agregamos margen inferior para separar las columnas */
+    }
+    
+  }
+  
+  @media (min-width: 768px) {
+    .navigation {
+      display: flex !important; /* Hacemos que esté siempre visible */
+    }
+  
+    .navbar-toggle {
+      display: none; /* Esconde el icono de hamburguesa en pantallas más grandes */
+    }
+  }
+
+  h2 {
+    color: #4B0082; /* Morado oscuro */
+  }
+  
+  /* Estilos para cada sección */
+  section {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 80%;
+    margin: 0 auto; /* Centrar el contenido */
+    background-color: #f9f9f9; /* Color de fondo para destacar las secciones */
+    margin-bottom: 20px;
+
+    
+  }
+  
+  /* Carrusel de Imágenes */
+  .carrusel {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 10px;
+    padding: 20px 0;
+  }
+  
+  .carrusel img {
+    max-width: 100%;
+    border: 2px solid #4B0082; /* Morado oscuro */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .carrusel img:hover {
+    transform: scale(1.05);
+  }
+
+  
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+  section {
+    padding: 20px;
+  }
+.img_representativa{
+  width: 200px;
+}
+  .carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .carrusel img {
+    max-width: 80vw;
+    height: auto;
+  }
+
+  /* ... Otros estilos ... */
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media (min-width: 768px) {
+  section {
+    max-width: 50%; /* Ajusta el ancho de la sección para pantallas medianas y grandes */
+  }
+  
+
+  .carrusel img {
+    max-width: 30%; /* Ajusta el ancho de las imágenes en el carrusel para pantallas medianas y grandes */
+  }
+
+  /* ... Otros estilos ... */
+}
+

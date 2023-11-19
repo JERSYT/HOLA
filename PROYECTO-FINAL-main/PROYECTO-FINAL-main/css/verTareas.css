@@ -1,0 +1,308 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  top: 0 !important;
+}
+* Estilos para el contenedor del botón de Google Translate */
+  #google_translate_element {
+    display: inline-block; /* Muestra el contenedor como un bloque en línea */
+    margin: 0px 10px;
+  }
+  
+  /* Estilos para el botón de Google Translate */
+  .goog-te-combo {
+    margin: 0 !important; /* Restablece el margen para el botón */
+    border: 1px solid #ccc; /* Añade un borde alrededor del botón */
+    border-radius: 5px; /* Agrega esquinas redondeadas al botón */
+    padding: 5px; /* Añade relleno alrededor del botón */
+  }
+  
+  /* Estilos para la lista desplegable de idiomas */
+  .goog-te-menu-value {
+    padding: 5px; /* Añade relleno a los elementos de la lista desplegable */
+    background-color: black;
+    color: white;
+  }
+  
+  
+  .goog-te-gadget-simple {
+    background-color: transparent !important;
+      border-left: none !important;
+      border-top: none !important;
+      border-bottom: none !important;
+      border-right: none !important;
+      font-size: 10pt !important;
+      display: inline-block !important;
+      padding-top: 1px !important;
+      padding-bottom: 2px !important;
+      cursor: pointer !important;
+      color: white !important;
+  }
+  
+  .goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed span {
+      text-decoration: none !important;
+      color: white !important;
+  }
+  
+  .goog-te-gadget-icon {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png?20160129085523') !important;
+      background-position: center center !important; /* Ajusta la posición según sea necesario */
+      background-repeat: no-repeat !important;
+      background-size: contain !important; /* Ajusta el tamaño según sea necesario */
+      margin-left: 2px !important;
+      margin-right: 2px !important;
+      width: 19px !important;
+      height: 19px !important;
+      margin-left: 5px;
+      
+  }
+  
+  .VIpgJd-ZVi9od-ORHb-OEVmcd {
+      display: none;
+  }
+  
+  .VIpgJd-ZVi9od-ORHb {
+      display: none;
+      padding: 0;
+  }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar-left img {
+  max-height: 40px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.admin-icon {
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#admin-menu {
+  display: none;
+}
+
+.navbar-right:hover #admin-menu {
+  display: block;
+  position: absolute;
+  top: 50px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.note-creator {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.note-creator h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.note-creator input,
+.note-creator textarea,
+.note-creator select {
+  width: 100%;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.note-creator button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.note-creator input[type="radio"] {
+  width: auto;
+}
+
+.note-creator button:hover {
+  background-color: #555;
+}
+
+.note {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.note:hover {
+  transform: scale(1.05);
+}
+
+.note h2 {
+  margin-bottom: 10px;
+}
+
+.note p {
+  margin: 0;
+}
+
+.note img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.delete-image-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: red;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+}
+
+#note-color-mod {
+  padding: 1px 2px;
+}
+
+.menu {
+  display: block;
+  margin-left: 50px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu li a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  text-decoration: solid;
+  color: rgb(197, 131, 247);
+}
+
+/* Ajustes específicos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    margin: 10px 0;
+  }
+
+  #admin-menu {
+    top: 60px;
+    right: 0;
+  }
+
+  .menu {
+    margin-left: 0;
+  }
+
+  .menu li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px; /* Separación entre elementos del menú */
+  }
+
+  .note-creator {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .navbar-left img {
+    max-height: 30px; /* Reducción del tamaño del logo */
+  }
+
+  .admin-icon {
+    margin: 10px 0; /* Espacio alrededor del icono de administrador */
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .note {
+    width: 100%; /* Ocupa el ancho completo en dispositivos móviles */
+  }
+
+  .delete-image-icon {
+    top: 10px;
+    right: 10px;
+  }
+
+  .image-wrapper {
+    margin: 0; /* Elimina el margen en dispositivos móviles */
+  }
+
+  #note-color-mod {
+    margin-top: 10px; /* Añade espacio entre el selector de color y el contenido */
+  }
+}
